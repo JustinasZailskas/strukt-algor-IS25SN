@@ -18,9 +18,11 @@ int main() {
     int skaicius = 5;
     int a = 0;
     int c = 2;
+    double kintamasisDouble = 3.56;
     skaicius++;
     cout << skaicius++ << endl;
     cout << ++skaicius << endl;
+    cout << kintamasisDouble << endl;
 
     {
         int b = skaicius + 10;
