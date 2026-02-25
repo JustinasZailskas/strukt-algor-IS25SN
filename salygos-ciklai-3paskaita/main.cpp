@@ -26,33 +26,38 @@ int main() {
     //     cout<<"Skaicius mazesnis uz 10"<<endl;
     // }
 
-    int diena = 3;
+    int diena;
 
-    switch (diena) {
-        case 1:
-            cout << "Pirmadienis";
-            break;
-        case 2:
-            cout <<"Antradienis";
-            break;
-        case 3:
-            cout << "Treciadienis";
-            break;
-        case 4:
-            cout << "Ketvirtadienis";
-            break;
-        case 5:
-            cout <<"Penktadienis";
-            break;
-        case 6:
-            cout << "Sestadienis";
-            break;
-        case 7:
-            cout <<"Sekmadienis";
-            break;
-        default:
-            cout <<"Tokios savaites dienos nera";
+    while(true) {
+        cout << "\nIveskite savaites diena (1-7)"<<endl;
+        cin>>diena;
+        switch (diena) {
+            case 1:
+                cout << "Pirmadienis";
+                break;
+            case 2:
+                cout <<"Antradienis";
+                break;
+            case 3:
+                cout << "Treciadienis";
+                break;
+            case 4:
+                cout << "Ketvirtadienis";
+                break;
+            case 5:
+                cout <<"Penktadienis";
+                break;
+            case 6:
+                cout << "Sestadienis";
+                break;
+            case 7:
+                cout <<"Sekmadienis";
+                break;
+            default:
+                cout <<"Tokios savaites dienos nera";
+        }
     }
+
 
     return 0;
 }
