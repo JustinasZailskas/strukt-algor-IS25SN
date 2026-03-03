@@ -19,5 +19,16 @@ int main() {
     //     cout << i+1 << " elemento reiksme yra lygi: "<<skaiciai[i]<<" indeksas yra "<<i<<endl;
     // }
 
+    int naujasSkaiciuMasyvas[5] = {};
+
+    for(int i = 0; i < 5; i++) {
+        cout << "Iveskite skaiciu: "<<endl;
+        cin >> naujasSkaiciuMasyvas[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+        cout << i+1 << " elemento reiksme yra lygi: "<<naujasSkaiciuMasyvas[i]<<" indeksas yra "<<i<<endl;
+    }
+
     return 0;
 }
