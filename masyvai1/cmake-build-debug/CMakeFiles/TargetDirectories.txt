@@ -1,0 +1,3 @@
+C:/Users/j.zailskas/Desktop/strukt-algor-IS25SN/masyvai1/cmake-build-debug/CMakeFiles/masyvai1.dir
+C:/Users/j.zailskas/Desktop/strukt-algor-IS25SN/masyvai1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/j.zailskas/Desktop/strukt-algor-IS25SN/masyvai1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
