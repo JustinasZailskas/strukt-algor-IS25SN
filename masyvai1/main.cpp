@@ -19,16 +19,40 @@ int main() {
     //     cout << i+1 << " elemento reiksme yra lygi: "<<skaiciai[i]<<" indeksas yra "<<i<<endl;
     // }
 
-    int naujasSkaiciuMasyvas[5] = {};
+    // int naujasSkaiciuMasyvas[5] = {};
+    //
+    // for(int i = 0; i < 5; i++) {
+    //     cout << "Iveskite skaiciu: "<<endl;
+    //     cin >> naujasSkaiciuMasyvas[i];
+    // }
+    //
+    // for (int i = 0; i < 5; i++) {
+    //     cout << i+1 << " elemento reiksme yra lygi: "<<naujasSkaiciuMasyvas[i]<<" indeksas yra "<<i<<endl;
+    // }
 
-    for(int i = 0; i < 5; i++) {
-        cout << "Iveskite skaiciu: "<<endl;
-        cin >> naujasSkaiciuMasyvas[i];
+    int masyvas[10];
+    int elemKiekis, nuliuKiekis = 0;
+
+    cout<<"Iveskite masyvo elementu skaiciu: "<<endl;
+    cin >> elemKiekis;
+    cout << "Iveskite masyvo elementu reiksmes"<<endl;
+    for (int i = 0; i < elemKiekis; i++) {
+        cout<<i+1<<" - aji masyvo elementas"<<endl;
+        cin >> masyvas[i];
+    }
+    for (int i = 0; i < elemKiekis; i++) {
+        cout << i+1 << " elemento reiksme yra lygi: "<<masyvas[i]<<" indeksas yra "<<i<<endl;
+        if(masyvas[i] == 0) {
+            nuliuKiekis++;
+        }
     }
 
-    for (int i = 0; i < 5; i++) {
-        cout << i+1 << " elemento reiksme yra lygi: "<<naujasSkaiciuMasyvas[i]<<" indeksas yra "<<i<<endl;
-    }
+    // for (int i = 0; i < elemKiekis; i++) {
+    //     if(masyvas[i] == 0) {
+    //         nuliuKiekis++;
+    //     }
+    // }
 
+    cout<<"Nuliu kiekis yra: "<<nuliuKiekis<<endl;
     return 0;
 }
