@@ -5,27 +5,36 @@ void stars();
 void starsV2(char, int);
 int sum(int, int);
 bool isEven(int);
+void kintamojoPerdavimasReiksme(int);
+void kintamojoPerdavimasAdresu(int&);
 
 int main() {
-    char zenklas;
-    int zenkluKiekis;
-    cout <<"Iveskite skiriamaji zenkla: "<<endl;
-    cin>>zenklas;
-    cout <<"Kiek kartu zenklas turi pasikartoti" <<endl;
-    cin >>zenkluKiekis;
-    starsV2('=', 70);
-    cout<<"Duomenu tipas       Ilgis       Diapazonas \n";
-    stars();
-    cout<<"char                 1B        -128 - 127"<<endl;
-    cout<<"short                2B        -32768 - 32767"<<endl;
-    cout<<"int                  4B        ~-2e9 - ~2e9"<<endl;
-    starsV2(zenklas, zenkluKiekis);
+    // char zenklas;
+    // int zenkluKiekis;
+    // cout <<"Iveskite skiriamaji zenkla: "<<endl;
+    // cin>>zenklas;
+    // cout <<"Kiek kartu zenklas turi pasikartoti" <<endl;
+    // cin >>zenkluKiekis;
+    // starsV2('=', 70);
+    // cout<<"Duomenu tipas       Ilgis       Diapazonas \n";
+    // stars();
+    // cout<<"char                 1B        -128 - 127"<<endl;
+    // cout<<"short                2B        -32768 - 32767"<<endl;
+    // cout<<"int                  4B        ~-2e9 - ~2e9"<<endl;
+    // starsV2(zenklas, zenkluKiekis);
+    //
+    // cout<< "Kvieciama SUMOS funkcija. Rezultatas: " << sum(6, zenkluKiekis)<<endl;
+    // cout<< "Kvieciama SUMOS funkcija. Rezultatas: " << sum(6, 8)<<endl;
+    //
+    // string arLyginis = isEven(zenkluKiekis) ? "Lyginis" : "Nelyginis";
+    // cout << "Kvieciama lygini/nelyginis skaiciaus funkcija: "<<arLyginis<<endl;
 
-    cout<< "Kvieciama SUMOS funkcija. Rezultatas: " << sum(6, zenkluKiekis)<<endl;
-    cout<< "Kvieciama SUMOS funkcija. Rezultatas: " << sum(6, 8)<<endl;
+    int skaicius = 12;
 
-    string arLyginis = isEven(zenkluKiekis) ? "Lyginis" : "Nelyginis";
-    cout << "Kvieciama lygini/nelyginis skaiciaus funkcija: "<<arLyginis<<endl;
+    cout<<"PRIES funkcijos kvietima: "<<skaicius<<endl;
+    // kintamojoPerdavimasReiksme(skaicius);
+    kintamojoPerdavimasAdresu(skaicius);
+    cout<<"PO funkcijos kvietimo: "<<skaicius<<endl;
 
     return 0;
 }
@@ -49,4 +58,16 @@ int sum(int num1, int num2) {
 
 bool isEven(int num) {
     return num % 2 == 0;
+}
+
+void kintamojoPerdavimasReiksme(int skaicius) {
+    cout<<"Perdavimas reiksme PRIES: "<<skaicius<<endl;
+    skaicius = 5;
+    cout<<"Perdavimas reiksme PO: "<<skaicius<<endl;
+}
+
+void kintamojoPerdavimasAdresu(int& skaicius) {
+    cout<<"Perdavimas adresu PRIES: "<<skaicius<<endl;
+    skaicius = 5;
+    cout<<"Perdavimas adresu PO: "<<skaicius<<endl;
 }
