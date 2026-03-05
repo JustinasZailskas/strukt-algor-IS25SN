@@ -24,7 +24,7 @@ int main() {
     cout << setw(15)<<left << "Studentas"; // Studentas
 
     for (int i = 0; i < DALYKAI; i++) {
-        cout << setw(15)<<left << dalykai[i];
+        cout << setw(15)<<left << dalykai[i]; //internal
     }
 
     cout << setw(15) <<"Vidurkis";
